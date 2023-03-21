@@ -45,7 +45,7 @@ public class MyTreadPoolDemo {
                 TimeUnit.SECONDS,// 时间单位
                 new ArrayBlockingQueue(3),// 任务队列
                 Executors.defaultThreadFactory(),// 创建线程工厂
-                new ThreadPoolExecutor.AbortPolicy()// 任务的拒绝策略
+                new ThreadPoolExecutor.DiscardPolicy()// 任务的拒绝策略
         );
         // 提交任务到线程池
         threadPoolExecutor.submit(new MyPoolRun());
@@ -60,7 +60,6 @@ public class MyTreadPoolDemo {
         threadPoolExecutor.submit(new MyPoolRun());
         // 销毁
         threadPoolExecutor.shutdown();
-
 
     }
 }
