@@ -1,8 +1,6 @@
-package com.thread.test02;
+package com.thread.test.test02;
 
-import java.lang.management.MonitorInfo;
 import java.math.BigDecimal;
-import java.util.Random;
 
 public class MyThread02 extends Thread{
     // 红包固定金额 100 元（共享变量：static）

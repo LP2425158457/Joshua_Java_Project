@@ -1,9 +1,8 @@
-package com.thread.test05;
+package com.thread.test.test05;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 
 public class Test05 {

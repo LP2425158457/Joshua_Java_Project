@@ -1,28 +1,35 @@
-package com.thread.test05;
-
-import com.thread.test04.MyThread04;
+package com.thread.test.test04;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.Callable;
 
-public class MyCallable implements Callable<Integer> {
+public class MyThread04 extends Thread{
 
     List<Integer> list = new ArrayList<Integer>();
 
-    // 使用Callable
-    public MyCallable(List list) {
+    public MyThread04(String name, List list) {
+        super(name);
         this.list = list;
     }
 
     @Override
-    public Integer call() throws Exception {
+    public void run() {
+        super.run();
+        // 循环
+        // 同步代码块
+        // 末尾（不符合）
+        // 末尾（符合）
+        // 采用统一的集合输出
+        // 线程1 的数组
+
+        // 利用线程栈的逻辑来存储
         List<Integer> curList = new ArrayList<Integer>();
+
         while (true){
             synchronized (MyThread04.class){
                 if (list.size()==0) {
-                    System.out.println(Thread.currentThread().getName() + curList);
+                    System.out.println(getName() + curList);
                     break;
                 }else {
                     // 打乱集合
@@ -35,11 +42,6 @@ public class MyCallable implements Callable<Integer> {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
-        if (curList.size()==0){
-            return null;
-        }else{
-            return Collections.max(curList);
         }
     }
 }

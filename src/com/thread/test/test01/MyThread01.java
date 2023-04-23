@@ -1,4 +1,4 @@
-package com.thread.test01;
+package com.thread.test.test01;
 
 public class MyThread01 extends Thread{
     // 定义1000张电影票，共享

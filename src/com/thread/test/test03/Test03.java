@@ -1,6 +1,4 @@
-package com.thread.test03;
-
-import com.thread.test02.MyThread02;
+package com.thread.test.test03;
 
 import java.util.ArrayList;
 import java.util.Collections;

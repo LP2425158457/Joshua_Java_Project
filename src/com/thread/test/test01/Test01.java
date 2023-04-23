@@ -1,4 +1,4 @@
-package com.thread.test01;
+package com.thread.test.test01;
 
 public class Test01 {
 

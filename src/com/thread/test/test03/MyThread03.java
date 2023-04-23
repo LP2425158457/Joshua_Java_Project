@@ -1,4 +1,4 @@
-package com.thread.test03;
+package com.thread.test.test03;
 
 import java.util.ArrayList;
 import java.util.Collections;

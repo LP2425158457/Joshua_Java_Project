@@ -1,6 +1,4 @@
-package com.thread.test02;
-
-import com.thread.test01.MyThread01;
+package com.thread.test.test02;
 
 public class Test02 {
 
